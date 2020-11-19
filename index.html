@@ -1,0 +1,45 @@
+<!Doctype html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+    <style>
+        video{
+            max-width: 100vw;
+            max-height: 100vh;
+        }
+    </style>
+    <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+    <h1> Watch "Behind the Scenes" Video by Armaan.</h1>
+    <video controls muted>
+        <source src="test2.mp4"  type="video/mp4" />
+        <track kind="subtitles" src="subtitles_en.vtt" srclang="en" />
+    </video>
+
+    <div class="row" style="background-color: #1abc9c;" id="contact">
+        <div class="col-sm-6 col-sm-offset-3">
+    <form id="contact-form"  role="form" action="thanks.html">
+        <div class="ajax-hidden">
+            <h2>Subscribe to My Newsletter</h2>
+            <div class="form-group wow fadeInUp">
+                <label class="sr-only" for="c_name">Name</label>
+                <input required type="text" id="c_name" class="form-control" name="subject" placeholder="Name">
+            </div>
+            <div class="form-group wow fadeInUp" data-wow-delay=".1s">
+                <label class="sr-only" for="c_email">Email</label>
+                <input required type="email" id="c_email" class="form-control" name="email" placeholder="E-mail">
+            </div>
+            <div class="form-group wow fadeInUp" data-wow-delay=".1s">
+                <button type="submit" class="btn btn-lg btn-block wow pulse" data-wow-delay=".3s">
+                    Submit
+                </button>
+            </div>
+            <br><br>
+        </div>
+        <div class="ajax-response"></div>
+    </form>
+    </div>
+    </div>
+</body>
